@@ -51,5 +51,5 @@ Available at: https://www.outerboxdesign.com/articles/web-development/ecommerce-
 Available at: https://www.procompare.co.za/prices/web-design/website-development 
 [Accessed 25 september 2025].
 
-#Changelog
+## Changelog
 The changes/corrections I have made for part 2 that were recommended from part 1 feedback are the rectified referencing format, which works better with the readme file. I have also added 2 new references to the reference list which are relevant to the Part 2 of the POE.
