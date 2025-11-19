@@ -10,7 +10,7 @@ body{font-size: medium;
   padding-left: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: aliceblue;
-    background-color: rgb(68, 214, 214);
+    background-color: rgb(182, 41, 107);
 
     /** navigation bar starts **/
 
@@ -38,13 +38,359 @@ ul.nav li a:hover {
   background-color: hwb(182 27% 9%);
 } 
 /**end of navi bar**/
+/**accordian**/
+
+.accordion {
+  background-color: #fc5614;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/**form stylin**/
+form {
+  border-radius: 8px;
+  background-color:black;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 50%;
+  background-color: #35cbe6;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  rgb(182, 41, 107);
 
 }
-footer{ padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
-    background-color: rgb(113, 222, 230);
+.error-message {
+  color: #ffb3b3;
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+input.error {
+  border: 2px solid #ff4d4d;
+  background-color: #ffe6e6;
+}
+
+input.success {
+  border: 2px solid #35cbe6;
+}
+
+/**footer**/
+}
+footer{ 
+   background-color: rgb(182, 41, 107);
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0;
+  text-align: left;
+  margin-top: 40px;
+  border-top: 3px solid #fc5614;
+}
+
+/* Navigation List */
+footer .footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Each nav link */
+footer .footer-nav li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* Hover effect */
+footer .footer-nav li a:hover {
+  background-color: #fc5614;
+  color: white;
+}
+
+footer .footer-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+/* lightbox styling */
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Search box styling */
+.search-box {
+  float: right;
+  padding: 10px;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  width: 150px;
+  transition: width 0.3s;
+}
+
+/* Expand on focus */
+.search-box input:focus {
+  width: 200px;
+}
+
+/* Search results display */
+#searchResults {
+  background-color: white;
+  color: black;
+  width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+  margin-left: 70%;
+  margin-top: 5px;
+}
+
+/* Responsive map container */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+
+  /* Border styling */
+  border: 5px solid #fc5614;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive iframe */
+.responsive-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+
+/* Footer social media icons */
+.footer-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icons .icon svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icons .icon:hover svg {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+/* Optional: enlarge icons on mobile */
+@media (max-width: 600px) {
+  .footer-icons .icon svg {
+    width: 40px;
+    height: 40px;
+  }
 }
