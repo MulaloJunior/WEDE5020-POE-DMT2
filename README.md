@@ -71,5 +71,6 @@ I have also styled my website footer as before it was not styled, I have also ad
 Other changes required for part 3 that I have addressed include, interactive maps, accordions, search features, gallery lightbox. I have implemented more onpage javascript to make the features more dynamic and responsive to further improve on user experience. keywords and meta tags have been added to the website, images have been optimized by using alt names and descriptive file names. links to social media platforms for the website have been added along with contact forms for easy communication with customers.
 
 additional requests such as security, faster loading speeds, sitemaps, etc have also been addressed for Part 3.
+this is the link to the hosted website: https://sweetcandy.xo.je/
 ## Changelog PART 2
 The changes/corrections I have made for part 2 that were recommended from part 1 feedback are the rectified referencing format, which works better with the readme file. I have also added 2 new references to the reference list which are relevant to the Part 2 of the POE.
